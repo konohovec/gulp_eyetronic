@@ -56,15 +56,15 @@
         letter-spacing: 1px;
         color: $title_color;
         @media (max-width: 1280px) {
-            padding: 82px 67px 55px 60px !important;
+            padding: 82px 67px 55px 60px ;
             font-size: 40px;
             line-height: 120%;
             letter-spacing: 0.5px;
         }
-        @media (min-width: 768px) {
+        @media (max-width: 768px) {
             font-size: 32px;
             line-height: 130%;
-            padding: 54px 179px 16px 34px !important;
+            padding: 54px 179px 16px 34px ;
         }
     }
     &__content_text {
@@ -462,4 +462,11 @@ body.lock {
 
 .header__content.active {
     display: none;
+}
+
+.opacity {
+    display: none;
+    @media (max-width: 1024px) {
+        display: block;
+    }
 }
